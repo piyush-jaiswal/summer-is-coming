@@ -1,0 +1,2 @@
+num2words==0.5.9
+sortedcontainers==2.1.0
