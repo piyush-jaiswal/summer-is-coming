@@ -131,7 +131,7 @@ class Ballot(UniverseCompetition):
 
     def show_status(self):
         print(
-            "Results after round {} ballot count".format(num2words(self._round_count))
+            f"Results after round {num2words(self._round_count)} ballot count"
         )
         for competitor in self._competitors:
             print(

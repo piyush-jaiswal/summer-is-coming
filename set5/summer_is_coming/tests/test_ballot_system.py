@@ -5,8 +5,8 @@ from unittest.mock import patch
 
 import pytest
 
-from summer_is_coming import universe_factory, utils
-from summer_is_coming.ballot import BallotKingdom, BallotMessage, Ballot
+from summer_is_coming import utils
+from summer_is_coming.ballot import BallotKingdom, BallotMessage
 from summer_is_coming.universe_competition_factory import BallotFactory
 
 

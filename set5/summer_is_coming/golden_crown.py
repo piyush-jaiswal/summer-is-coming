@@ -1,8 +1,8 @@
-from typing import Tuple, List
+from typing import Tuple, List, Iterable
 
+from summer_is_coming import universe_factory
 from summer_is_coming import utils
 from summer_is_coming.universe import Universe
-from summer_is_coming import universe_factory
 
 
 class GoldenCrown:
@@ -32,7 +32,7 @@ class GoldenCrown:
 
     def _get_input_messages(self) -> List[Tuple[str, str]]:
         n = int(input("No of messages: "))
-        print("Input Messages to kingdoms from King {}:".format(self.king))
+        print(f"Input Messages to kingdoms from King {self.king}:")
         inputs = [self._process_input(input("Input: ")) for _ in range(n)]
         print()
         return inputs
@@ -44,8 +44,8 @@ class GoldenCrown:
         replies = [self._send_message(kingdom_name, msg) for kingdom_name, msg in self._get_input_messages()]
         return replies
 
-    def _is_strong(self, replies: List[bool]) -> bool:
-        return replies.count(True) >= self.allies_needed
+    def _is_strong(self, replies: Iterable[bool]) -> bool:
+        return sum(1 for reply in replies if reply is True) >= self.allies_needed
 
     def show_state(self):
         king = self.king if self.universe.ruler == self.kingdom_name else self._no_ruler

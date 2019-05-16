@@ -1,12 +1,4 @@
-check coding to interface
-check deepcopy on tests of breaker of chains
-Replace print with f strings
-Replace southeros ballot systemfixture with abstract factory
-
-
-
-
-
+Write assumptions
 
 # Summer is Coming
 The project is written in python3.7.
@@ -24,8 +16,8 @@ The solutions to the problems are implemented in menu driven style. The input fo
 
 To run from CLI:<br>
 ```cd <parent of root dir of project>```<br>
-```python -m summer_is_coming.a_golden_crown```<br>
-```python -m summer_is_coming.breaker_of_chains```
+```python -m summer_is_coming.problem1```<br>
+```python -m summer_is_coming.problem2```
 
 
 ### Testing
