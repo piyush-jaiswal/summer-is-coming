@@ -12,7 +12,6 @@ Replace southeros ballot systemfixture with abstract factory
 The project is written in python3.7.
 
 ### Assumptions
-- If only one kingdom is competing, the ballet need not be conducted and he can be a ruler without forming allies.
 - Ability to form allies, when competing, and when already having previous ally, are problem specific. Hence their logic is not coupled in the member function ```form_allegiance``` in ```universe.py```.
 - Every consecutive ballot rounds, the remaining competing kingdoms lose their allies. The previously competing ones can form allegiances.
 - The data structures implemented with ```SortedKeyList``` have lookup and insert time of O(log n). If memory is not an issue, these can be replaced with python's inbuilt ```dict``` with lookup time of O(1).

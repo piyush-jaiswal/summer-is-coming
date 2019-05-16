@@ -48,6 +48,3 @@ class HighPriest:
         self._crown_king(self._universe_competition.winner)
 
         self._show_universe_state()
-
-
-# abstract factory?

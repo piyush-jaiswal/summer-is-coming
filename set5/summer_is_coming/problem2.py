@@ -1,9 +1,6 @@
-from summer_is_coming.ballot_system import Ballot
-from summer_is_coming import universe_factory
 from summer_is_coming.breaker_of_chains import HighPriest
+from summer_is_coming.universe_competition_factory import BallotFactory
 
 
 if __name__ == "__main__":
-    HighPriest(
-        Ballot(universe_factory.get("Southeros"), no_of_messages=6)
-    ).choose_ruler()
+    HighPriest(BallotFactory.get("Southeros")).choose_ruler()

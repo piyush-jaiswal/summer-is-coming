@@ -6,7 +6,8 @@ from unittest.mock import patch
 import pytest
 
 from summer_is_coming import universe_factory, utils
-from summer_is_coming.ballot_system import BallotKingdom, BallotMessage, Ballot
+from summer_is_coming.ballot import BallotKingdom, BallotMessage, Ballot
+from summer_is_coming.universe_competition_factory import BallotFactory
 
 
 class TestBallotKingdom:
@@ -69,7 +70,7 @@ class TestBallot:
     @staticmethod
     @pytest.fixture
     def southeros_ballot():
-        return Ballot(universe_factory.get("Southeros"), no_of_messages=6)
+        return BallotFactory.get("Southeros")
 
     @staticmethod
     @pytest.fixture
