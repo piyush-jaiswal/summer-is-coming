@@ -11,6 +11,7 @@ from summer_is_coming.universe import Universe
 @dataclass
 class UniverseCompetitor(ABC):
     kingdom: Kingdom
+    is_competing: bool = False
 
     @abstractmethod
     def compete(self, *args, **kwargs):

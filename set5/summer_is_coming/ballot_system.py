@@ -31,7 +31,6 @@ class BallotKingdom(UniverseCompetitor):
 
     def __init__(self, kingdom: Kingdom):
         super().__init__(kingdom)
-        self.is_competing = False
         self.kingdom.give_allegiance = self._check_availability(
             self.kingdom.give_allegiance
         )

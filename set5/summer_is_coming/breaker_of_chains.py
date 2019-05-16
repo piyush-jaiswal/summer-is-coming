@@ -16,14 +16,14 @@ class HighPriest:
         universe = self._universe_competition.universe
 
         # setting the allies of the universe in the end prevents the universe state being modified during the competition
-        allegainces_formed = [
+        allegiances_formed = [
             universe.form_allegiance(
                 sender=kingdom.name, receiver=ally.name, msg=ally.emblem
             )
             for kingdom in kingdoms
             for ally in kingdom.allies_received
         ]
-        assert all(allegainces_formed) is True
+        assert all(allegiances_formed)
         universe.ruler = winner.kingdom.name
 
     def _show_universe_state(self):

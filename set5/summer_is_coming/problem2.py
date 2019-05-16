@@ -5,5 +5,5 @@ from summer_is_coming.breaker_of_chains import HighPriest
 
 if __name__ == "__main__":
     HighPriest(
-        Ballot(universe_factory.get("Southeros"), no_of_messages=3)
+        Ballot(universe_factory.get("Southeros"), no_of_messages=6)
     ).choose_ruler()
