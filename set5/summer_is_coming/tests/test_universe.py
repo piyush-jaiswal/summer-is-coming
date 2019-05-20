@@ -27,6 +27,11 @@ def test_add_kingdoms(westeros):
     assert westeros.get_kingdom("Tully") == tully
     assert len(westeros.kingdoms) == prev_len + 1
 
+    arryn = Kingdom(name="Arryn", emblem="Eagle")
+    arryn._allies_received.add(tully)
+    with pytest.raises(RuntimeError):
+        westeros.add_kingdoms([arryn])
+
 
 def test__get_kingdom(westeros):
     assert westeros.get_kingdom("Stark") == utils.sorted_list_get_with_key(westeros._kingdoms, "Stark")

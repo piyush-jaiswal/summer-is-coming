@@ -32,6 +32,8 @@ class Universe:
 
     def add_kingdoms(self, kingdoms: Iterable[Kingdom]):
         for kingdom in kingdoms:
+            if kingdom.allies_given or kingdom.allies_received:
+                raise RuntimeError("Kingdom '{}' has already formed allegiances and thus cannot be part of a universe")
             if kingdom not in self._kingdoms:
                 self._kingdoms.add(kingdom)
 
