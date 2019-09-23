@@ -70,7 +70,7 @@ class Ballot(UniverseCompetition):
             key=lambda x: x.kingdom.name,
         )
         self._ballot = []
-        self._round_count = 0
+        self._round_count = 1
 
     @staticmethod
     def _process_input(user_input):
@@ -126,6 +126,7 @@ class Ballot(UniverseCompetition):
             utils.sorted_list_get_with_key(self._ballot_kingdoms, competitor_name)
             for competitor_name in self._process_input(input("Input: "))
         ]
+        print()
         for competitor in self._competitors:
             competitor.is_competing = True
 
