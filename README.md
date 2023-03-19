@@ -31,7 +31,7 @@ The problem is to help the High Priest choose the ruler of Southeros through the
 - The data structures implemented with ```SortedKeyList``` have lookup and insert time of O(log n). If memory is not an issue, these can be replaced with python's inbuilt ```dict``` with lookup time of O(1).
 
 ### Dependencies
-```pip install -r requirements.txt```
+```pip install -r summer_is_coming/requirements.txt```
 
 ### Running the project
 The solutions to the problems are implemented in menu driven style. The input format is the same as described in the problem statement. The only change is in ```a_golden_crown.py``` which additionally takes the number of messages as an input.<br>
