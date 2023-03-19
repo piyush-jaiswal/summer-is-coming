@@ -43,7 +43,7 @@ To run from CLI:<br>
 
 ### Testing
 The test suite runs on pytest. Installing dependencies for testing:<br>
-```pip install -r requirements-test.txt```
+```pip install -r summer_is_coming/requirements-test.txt```
 
 Running the test suite:<br>
 ```cd <root directory of project>```<br>
