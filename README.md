@@ -1,5 +1,5 @@
 # Tame of Thrones
-The project is written in python3.7.
+The project is written in python3.7. [Endorsed](https://indorse.io/claim-reports/5d9b28c91547030001b96e7a) by Indorse.
 
 ### Problem
 For details please go through `problem_statement.pdf`
