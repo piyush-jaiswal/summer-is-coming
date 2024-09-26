@@ -21,8 +21,8 @@ For example, secret message to the Land kingdom needs to have the letter 'p','n'
 
 ### Demo
 <p align="center">
-  <img src="./docs/golden_crown1.png" height="280" width="450" style="display:inline-block; margin-right: 50px;" />
-  <img src="./docs/golden_crown2.png" height="280" width="450" style="display:inline-block;" /> 
+  <img src="./docs/golden_crown1.png" height="300" width="49%" style="margin-right: 5%;" />
+  <img src="./docs/golden_crown2.png" height="300" width="49%" /> 
 </p>
 
 <br>
@@ -60,8 +60,8 @@ The format of the message dropped in the ballot should contain:
 
 ### Demo
 <p align="center">
-  <img src="./docs/breaker_of_chains1.png" height="280" width="450" style="display:inline-block; margin-right: 50px;" />
-  <img src="./docs/breaker_of_chains2.png" height="280" width="450" style="display:inline-block;" /> 
+  <img src="./docs/breaker_of_chains1.png" height="300" width="49%" style="margin-right: 5%;" />
+  <img src="./docs/breaker_of_chains2.png" height="300" width="49%" /> 
 </p>
 
 <br>
